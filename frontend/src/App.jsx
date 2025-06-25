@@ -78,7 +78,7 @@ function App() {
     return (
         <div className={`min-h-screen transition-colors duration-500 bg-gray-50 dark:bg-dark-bg`}>
             <div className="container mx-auto px-4 py-8">
-                <header className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
+                <header className="header-glow flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
                     <div className="text-center md:text-left">
                         <h1 className="text-4xl font-extrabold tracking-tight mb-2 text-gray-900 dark:text-dark-text animate-fade-in">
                             TagScript

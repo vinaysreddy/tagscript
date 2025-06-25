@@ -9,6 +9,71 @@ body {
         sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Colorful animated gradient background */
+    background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 25%, #a1c4fd 50%, #c2e9fb 75%, #fbc2eb 100%);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease-in-out infinite;
+}
+
+.dark body {
+    background: linear-gradient(120deg, #232526 0%, #414345 25%, #283e51 50%, #485563 75%, #232526 100%);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Stronger, more colorful header glow effect */
+.header-glow {
+    position: relative;
+    z-index: 1;
+}
+
+.header-glow::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160%;
+    height: 160%;
+    background: radial-gradient(circle, rgba(255, 221, 51, 0.35) 0%, rgba(252, 182, 159, 0.25) 30%, rgba(161, 196, 253, 0.18) 60%, rgba(255, 255, 255, 0) 90%);
+    filter: blur(48px) saturate(1.5);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.95;
+}
+
+.dark .header-glow::before {
+    background: radial-gradient(circle, rgba(255, 221, 51, 0.45) 0%, rgba(252, 182, 159, 0.32) 30%, rgba(161, 196, 253, 0.22) 60%, rgba(35, 37, 38, 0) 90%);
+}
+
+/* Glassy effect for main containers */
+.glass-bg {
+    background: rgba(255, 255, 255, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+    backdrop-filter: blur(16px) saturate(1.2);
+    -webkit-backdrop-filter: blur(16px) saturate(1.2);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.dark .glass-bg {
+    background: rgba(40, 44, 52, 0.55);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.28);
+    border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 code {
