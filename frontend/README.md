@@ -1,4 +1,4 @@
-# MediaIQ - AI Transcript Analysis
+# TagScript - AI Transcript Analysis
 
 A lightweight web application that analyzes `.txt` or `.srt` transcripts using OpenAI's GPT-4 to extract tags, create timestamped chapters, classify ad safety, and provide content-aware viewer retention analysis.
 
@@ -10,10 +10,6 @@ A lightweight web application that analyzes `.txt` or `.srt` transcripts using O
   - Tags and topics extraction
   - Timestamped chapter summaries
   - Ad safety classification (✅ Safe / ⚠️ Needs Review / ❌ Unsafe)
-- **Content-Aware Viewer Retention Analysis**: 
-  - Intelligent drop-off simulation based on actual transcript content
-  - Factors in content length, complexity, ad safety, and chapter analysis
-  - Provides actionable insights for content optimization
 - **No Database**: Stateless application with no persistent storage
 - **Modern UI**: Clean, responsive design with Tailwind CSS
 

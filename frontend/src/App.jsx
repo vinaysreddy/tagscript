@@ -154,6 +154,20 @@ function App() {
                     </div>
                 </div>
             </div>
+            {/* Footer */}
+            <footer className="w-full mt-12 py-6 border-t border-gray-200 dark:border-dark-border text-center bg-gray-50 dark:bg-dark-bg transition-colors duration-500">
+                <span className="text-gray-600 dark:text-dark-muted text-sm">
+                    Developed by{' '}
+                    <a
+                        href="https://www.linkedin.com/in/vinay-sekhar-reddy-01093b188/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary-600 dark:text-dark-accent hover:underline font-semibold"
+                    >
+                        Vinay S Reddy
+                    </a>
+                </span>
+            </footer>
         </div>
     )
 }
