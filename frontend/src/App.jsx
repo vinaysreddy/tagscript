@@ -4,6 +4,8 @@ import TranscriptUploader from './components/TranscriptUploader'
 import AnalysisResults from './components/AnalysisResults'
 import ChunkedAnalysisDashboard from './components/ChunkedAnalysisDashboard'
 
+const API_URL = import.meta.env.VITE_API_URL || 'https://tagscript.onrender.com/api/analyze';
+
 function App() {
     const [transcript, setTranscript] = useState('')
     const [results, setResults] = useState(null)
@@ -34,7 +36,7 @@ function App() {
         setError(null)
 
         try {
-            const response = await fetch('/api/analyze', {
+            const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
