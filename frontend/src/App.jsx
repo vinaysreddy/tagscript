@@ -79,7 +79,7 @@ function App() {
                 <header className="flex flex-col md:flex-row items-center justify-between mb-8 gap-4">
                     <div className="text-center md:text-left">
                         <h1 className="text-4xl font-extrabold tracking-tight mb-2 text-gray-900 dark:text-dark-text animate-fade-in">
-                            MediaIQ
+                            TagScript
                         </h1>
                         <p className="text-lg text-gray-600 dark:text-dark-muted animate-fade-in delay-100">
                             AI-powered transcript analysis for content creators
