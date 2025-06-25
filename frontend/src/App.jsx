@@ -87,18 +87,31 @@ function App() {
                             AI-powered transcript analysis for content creators
                         </p>
                     </div>
-                    <button
-                        onClick={() => setDarkMode(dm => !dm)}
-                        className="inline-flex items-center px-4 py-2 rounded-lg border border-gray-300 dark:border-dark-border bg-white dark:bg-dark-surface text-gray-700 dark:text-dark-text shadow hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-dark-accent"
-                        aria-label="Toggle dark mode"
-                    >
-                        {darkMode ? (
-                            <svg className="h-6 w-6 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" /></svg>
-                        ) : (
-                            <svg className="h-6 w-6 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 4.95l-.71-.71M4.05 4.93l-.71-.71" /></svg>
-                        )}
-                        <span className="font-semibold">{darkMode ? 'Dark' : 'Light'} Mode</span>
-                    </button>
+                    <div className="flex flex-col md:flex-row items-center gap-4">
+                        <span className="text-gray-600 dark:text-dark-muted text-sm md:mr-4">
+                            Developed by{' '}
+                            <a
+                                href="https://www.linkedin.com/in/vinay-sekhar-reddy-01093b188/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-primary-600 dark:text-dark-accent hover:underline font-semibold"
+                            >
+                                Vinay S Reddy
+                            </a>
+                        </span>
+                        <button
+                            onClick={() => setDarkMode(dm => !dm)}
+                            className="inline-flex items-center px-4 py-2 rounded-lg border border-gray-300 dark:border-dark-border bg-white dark:bg-dark-surface text-gray-700 dark:text-dark-text shadow hover:shadow-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-dark-accent"
+                            aria-label="Toggle dark mode"
+                        >
+                            {darkMode ? (
+                                <svg className="h-6 w-6 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" /></svg>
+                            ) : (
+                                <svg className="h-6 w-6 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 4.95l-.71-.71M4.05 4.93l-.71-.71" /></svg>
+                            )}
+                            <span className="font-semibold">{darkMode ? 'Dark' : 'Light'} Mode</span>
+                        </button>
+                    </div>
                 </header>
 
                 <div className="max-w-6xl mx-auto">
@@ -154,20 +167,6 @@ function App() {
                     </div>
                 </div>
             </div>
-            {/* Footer */}
-            <footer className="w-full mt-12 py-6 border-t border-gray-200 dark:border-dark-border text-center bg-gray-50 dark:bg-dark-bg transition-colors duration-500">
-                <span className="text-gray-600 dark:text-dark-muted text-sm">
-                    Developed by{' '}
-                    <a
-                        href="https://www.linkedin.com/in/vinay-sekhar-reddy-01093b188/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-primary-600 dark:text-dark-accent hover:underline font-semibold"
-                    >
-                        Vinay S Reddy
-                    </a>
-                </span>
-            </footer>
         </div>
     )
 }
